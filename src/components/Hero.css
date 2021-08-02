@@ -32,6 +32,10 @@
     
 }
 
+.go {
+    background : rgb(233, 108, 5)
+}
+
 img {
     position: absolute;
     top : 0px;
@@ -45,9 +49,9 @@ img {
     color : #fff;
     z-index: 200;
     position:absolute;
-    bottom : 20%;
+    top : 50%;
     left : 10%;
-    transform: translate(-10%, -20%);
+    transform: translate(-10%, -50%);
 }
 
 .hero--details > h1 {

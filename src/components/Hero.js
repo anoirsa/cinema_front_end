@@ -30,9 +30,19 @@ const Hero = ({slides}) => {
                 return (
                     <div className={currentV === index ? "hero-wrapper active" :"hero-wrapper"} key={index}>
                         {currentV === index && <div className="hero--details">
-                            <h1>{item.label}</h1>
-                            <p>{item.price}</p>
-                            <Button primary={true} content={true}>View Subscription</Button>
+                            <h1 
+                                data-aos = 'fade-down' 
+                                data-aos-duration="600">{item.label}</h1>
+                            <p 
+                                data-aos = 'fade-down'
+                                data-aos-duration="600"
+                                data-aos-delay="200" >{item.price}</p>
+                            <Button 
+                                 data-aos = 'fade-down'
+                                 data-aos-duration="600"
+                                 data-aos-delay="250"
+                                 primary={true} 
+                                content={true}>View Subscription</Button>
                         </div> }
 
                          {currentV === index && <img src={item.image} /> }
